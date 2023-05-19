@@ -10,7 +10,7 @@ function App() {
     <div>
       <NavBar />
       <Home name = {user["name"]} city={user["city"]} color = {user.color}/>
-      <About bio = {user["bio"]} links = {user["links"]}/>
+      <About bio = {user["bio"]} links = {user.links}/>
     </div>
   );
 }

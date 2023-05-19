@@ -7,23 +7,23 @@ function About(props) {
     <div id="about">
       <h2>About Me</h2>
       {display(props)}
-      <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
-     
-      <Links linked = {props["links"].linkedin} linkgit = {props["links"].github} />
+      <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this"/>
+      <Links linkedin={props.links.linkedin} github={props.links.github} />
     </div>
   );
 }
 
 function display(prop){
   if (prop.bio === ""){
-    return null;  
+    return <></>;  
   }
   else if(prop.bio === undefined){
-    return null
+    return <></>
   }
   else {
    
     return <p>{prop.bio}</p>
 }
+
 }
 export default About;
